@@ -82,7 +82,8 @@ nav{
 
 .hero h1{
     font-family:'Playfair Display',serif;
-    font-size:5rem;
+    font-size:clamp(2.3rem, 8vw, 5rem);
+    line-height:1.15;
     margin-bottom:20px;
 }
 
@@ -99,7 +100,8 @@ section{
 
 .section-title{
     font-family:'Playfair Display',serif;
-    font-size:3rem;
+    font-size:clamp(1.8rem, 5.5vw, 3rem);
+    line-height:1.2;
     margin-bottom:25px;
 }
 
@@ -158,6 +160,13 @@ video{
 
 }
 
+.logo-destino{
+    display:block;
+    width:200px;
+    max-width:60%;
+    margin:0 auto 30px;
+}
+
 footer{
     background:#222;
     color:white;
@@ -166,6 +175,30 @@ footer{
 }
 
 @media(max-width:768px){
+
+nav{
+    flex-wrap:wrap;
+    gap:15px;
+    padding:15px 6%;
+}
+
+.logo{
+    font-size:1.3rem;
+}
+
+.menu{
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+section{
+    padding:55px 6%;
+}
+
+.hero{
+    min-height:70vh;
+    padding:25px;
+}
 
 .donate-box{
     width:100%;
@@ -178,6 +211,10 @@ footer{
     width:100%;
     max-width:100%;
     padding:20px;
+}
+
+.card p[style*="line-height:2"]{
+    line-height:1.7 !important;
 }
 
 .btn{
@@ -322,11 +359,16 @@ Mensajes de esperanza
 <div class="quote">
 "Cuando ayudamos a otros, construimos una comunidad más fuerte."
 </div>
+
+</section>
+
 <section id="destino">
 
 <h2 class="section-title">
 Destino de la donación
 </h2>
+
+<img src="madre-esperanza.jpeg" alt="Madre de la Esperanza - Familia Grande Hogar de Cristo" class="logo-destino">
 
 <div class="donate-box">
 
@@ -399,8 +441,6 @@ Gracias a cada aporte podemos colaborar con alimentos, elementos de higiene, rop
 </div>
 
 </div>
-
-</section>
 
 </section>
 
